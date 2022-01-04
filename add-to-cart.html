@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Document</title>
+  <link rel="preload" href="fonts/poppins/poppins-400.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/poppins/poppins-500.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/poppins/poppins-700.woff2" as="font" crossorigin="anonymous">
+
+  <link rel="preload" href="fonts/cormorant_garamond/cormorant-garamond-400.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/cormorant_garamond/cormorant-garamond-400-italic.woff2" as="font"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/cormorant_garamond/cormorant-garamond-600.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/cormorant_garamond/cormorant-garamond-700.woff2" as="font" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Add Item To Cart -->
+    <section class="add-to-cart modal modal--active js-close-window" id="add-to-cart">
+      <h2 class="visually-hidden">Add to card</h2>
+      <div class="add-to-cart__inner">
+        <p class="add-to-cart__title">The item was added to your cart</p>
+        <div class="add-to-cart__form">
+          <form action="/" method="post">
+            <table class="add-to-cart__item-list">
+              <tr class="add-to-cart__item">
+                <td class="add-to-cart__image">
+                  <picture>
+                    <!-- .webp -->
+                    <source type="image/webp"
+                      srcset="img/content/card/necklace-detail.webp 1x, img/content/card/necklace-detail_2x.webp 2x">
+                    <!-- .jpg -->
+                    <img src="img/content/card/necklace-detail.jpg" srcset="img/content/card/necklace-detail_2x.jpg 2x"
+                      alt="Necklace detail">
+                  </picture>
+                </td>
+
+                <td class="add-to-cart__product-name">
+                  <p>Gold Necklace </p>
+                  <span>$ 115</span>
+                </td>
+
+                <td class="add-to-cart__product-count">
+                  <button class="add-to-cart__change-count-button add-to-cart__change-count-button--increase">
+                    <span class="visually-hidden">increase</span>
+                  </button>
+
+                  <label class="visually-hidden" for="product_count"></label>
+                  <input type="text" value="1" name="product_count" id="product_count">
+
+                  <button class="add-to-cart__change-count-button add-to-cart__change-count-button--decrease">
+                    <span class="visually-hidden">decrease</span>
+                  </button>
+                </td>
+              </tr>
+            </table>
+
+            <div class="add-to-cart__total">
+              <p class="add-to-cart__total-items">
+                You have <span> 1 </span> item in the cart
+              </p>
+
+              <p class="add-to-cart__total-price">
+                Cart subtotal: <span>$</span> <span>115</span>
+              </p>
+            </div>
+
+            <div class="add-to-cart__buttons-wrapper">
+              <button class="add-to-cart__continue white-button js-close-window">Continue shopping</button>
+              <button class="brown-button" type="submit">Checkout</button>
+            </div>
+
+
+            <button class="add-to-cart__close-button add-to-cart__close-button--nojs close-button js-close-window"><span
+                class="visually-hidden">close</span></button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+</body>
+
+</html>

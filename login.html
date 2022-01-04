@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+  <link rel="preload" href="fonts/poppins/poppins-400.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/poppins/poppins-500.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/poppins/poppins-700.woff2" as="font" crossorigin="anonymous">
+
+  <link rel="preload" href="fonts/cormorant_garamond/cormorant-garamond-400.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/cormorant_garamond/cormorant-garamond-400-italic.woff2" as="font"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/cormorant_garamond/cormorant-garamond-600.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/cormorant_garamond/cormorant-garamond-700.woff2" as="font" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <!-- Login -->
+  <section class="login modal modal--active js-close-window" id="modal-login">
+    <h2 class="visually-hidden">Log in</h2>
+    <div class="login__inner">
+      <h2>Log In</h2>
+      <div class="login__form">
+        <form action="/" method="post">
+          <label class="visually-hidden" for="email">Input your email</label>
+          <input type="email" name="email" id="email" placeholder="Your E-mail" data-local-stor="email"
+            autocomplete="off" required>
+
+          <label class="visually-hidden" for="pass">Введите пароль</label>
+          <!-- data-pass-pattern - 'lengthReq, bigLettersReq, digitsReq, specialsReq' -->
+          <input type="password" name="pass" id="pass" placeholder="Password" data-pass-pattern="6,1,1,0"
+            autocomplete="off" required>
+          <p class="login__forgot-pass">
+            <a href="#">Forgot your password?</a>
+          </p>
+
+          <button class="brown-button" type="submit">Log in</button>
+        </form>
+
+        <div class=login__signup>
+          <p>Don’t have an account?</p>
+          <a href="#">Sign up</a>
+        </div>
+
+        <button class="login__close-button login__close-button--nojs  close-button js-close-window"><span
+            class="visually-hidden">close</span></button>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>

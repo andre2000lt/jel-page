@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Document</title>
+  <link rel="preload" href="fonts/poppins/poppins-400.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/poppins/poppins-500.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/poppins/poppins-700.woff2" as="font" crossorigin="anonymous">
+
+  <link rel="preload" href="fonts/cormorant_garamond/cormorant-garamond-400.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/cormorant_garamond/cormorant-garamond-400-italic.woff2" as="font"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/cormorant_garamond/cormorant-garamond-600.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/cormorant_garamond/cormorant-garamond-700.woff2" as="font" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Filter -->
+  <section class="catalog__filter catalog__filter--nojs filter filter--nojs modal--active js-close-window" id="filter">
+    <h2 class="visually-hidden">Catalog Filter</h2>
+    <form action="/" method="get">
+      <ul class="filter__categories">
+        <li>
+          <button class="filter__category-name filter__category-name--active js-accordion-button"
+            type="button">Product</button>
+
+          <ul class="filter__category-content filter__category-content--visible">
+            <li class="filter__checkbox">
+              <input class="visually-hidden" type="checkbox" name="necklaces" id="necklaces" checked>
+              <label for="necklaces">Necklaces</label>
+            </li>
+            <li class="filter__checkbox">
+              <input class="visually-hidden" type="checkbox" name="chokers" id="chokers" checked>
+              <label for="chokers">Chokers</label>
+            </li>
+            <li class="filter__checkbox">
+              <input class="visually-hidden" type="checkbox" name="rings" id="rings">
+              <label for="rings">Rings</label>
+            </li>
+            <li class="filter__checkbox">
+              <input class="visually-hidden" type="checkbox" name="earrings" id="earrings" checked>
+              <label for="earrings">Earrings</label>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <button class="filter__category-name filter__category-name--active js-accordion-button"
+            type="button">Material</button>
+
+          <ul class="filter__category-content filter__category-content--visible">
+            <li class="filter__checkbox">
+              <input class="visually-hidden" type="checkbox" name="gold" id="gold" checked>
+              <label for="gold">Gold</label>
+            </li>
+            <li class="filter__checkbox">
+              <input class="visually-hidden" type="checkbox" name="silver" id="silver">
+              <label for="silver">Silver</label>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <button class="filter__category-name filter__category-name--active js-accordion-button"
+            type="button">Collection</button>
+
+          <ul class="filter__category-content filter__category-content--visible">
+            <li class="filter__checkbox">
+              <input class="visually-hidden" type="checkbox" name="pink_flamingo" id="pink_flamingo" checked>
+              <label for="pink_flamingo">Pink flamingo</label>
+            </li>
+            <li class="filter__checkbox">
+              <input class="visually-hidden" type="checkbox" name="dreams" id="dreams">
+              <label for="dreams">Dreams</label>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <button
+            class="filter__category-name filter__category-name--range filter__category-name--active js-accordion-button"
+            type="button">Price</button>
+          <div class="filter__category-content filter__category-content--range filter__category-content--visible">
+            <div class="filter__range">
+              <div class="filter__scale">
+                <div class="filter__bar"></div>
+
+                <div class="filter__toggle filter__toggle--min"></div>
+                <div class="filter__toggle filter__toggle--max"></div>
+              </div>
+
+              <div class="filter__range-inputs">
+                <div>
+                  <span>$</span>
+                  <label class="visually-hidden" for="min_price">price from</label>
+                  <input class="min-price-input" type="number" name="min_price" id="min_price" value="55" readonly
+                    tabindex="-1">
+                </div>
+
+                <div>
+                  <span>$</span>
+                  <label class="visually-hidden" for="max_price">price to</label>
+                  <input class="max-price-input" type="number" name="max_price" id="max_price" value="155" readonly
+                    tabindex="-1">
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <button class="brown-button" type="submit">Apply</button>
+      <button class="white-button" type="reset">Clear All</button>
+
+      <button class="filter__close-button filter__close-button--nojs js-close-window" type="button">
+        <span class="visually-hidden">Close</span>
+      </button>
+    </form>
+
+  </section>
+</body>
+
+</html>
